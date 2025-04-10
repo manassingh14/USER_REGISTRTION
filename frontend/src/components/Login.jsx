@@ -13,7 +13,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.get(`https://fsdbackenddsa.onrender.com/users/${loginData.id}`);
+      const res = await axios.get(`https://user-registration1-5u2i.onrender.com/users/${loginData.id}`);
       if (res.data.password === loginData.password) {
         alert('Login Successful!');
         navigate('/dashboard');
