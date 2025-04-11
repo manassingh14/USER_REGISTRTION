@@ -13,7 +13,7 @@ const Register = () => {
     };
 
     try {
-      const res = await axios.post('https://user-registration1-5u2i.onrender.com/users', user);
+      const res = await axios.post('https://user-registrtion.onrender.com/users', user);
       const { id, password } = res.data.data;
 
       alert(`Registration Successful!\nYour User ID:${id} and Password ${password} `);
